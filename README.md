@@ -22,12 +22,12 @@ Flink training by dataartisans
 
 - kafka.DataToKafkaJob: 
 
-```docker exec -it kafka bash /opt/kafka_2.11-0.10.0.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic taxiRides```
+```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic taxiRides```
 
 - kafka.DataFromKafkaJob:
 
-```docker exec -it kafka bash /opt/kafka_2.11-0.10.0.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic popularPlaces```
+```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic popularPlaces```
 
 - prediction.PredictedRideTimeJob: 
 
-```docker exec -it kafka bash /opt/kafka_2.11-0.10.0.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic predictionTime```
+```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic predictionTime```
