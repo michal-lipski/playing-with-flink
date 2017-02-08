@@ -31,3 +31,9 @@ Flink training by dataartisans
 - prediction.PredictedRideTimeJob: 
 
 ```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic predictionTime```
+
+#### Run sample consumer/producer
+
+```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic taxiRides```
+
+```docker exec -it kafka bash /opt/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --topic taxiRides```
